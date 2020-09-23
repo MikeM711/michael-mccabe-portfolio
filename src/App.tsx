@@ -3,10 +3,10 @@ import React, {useState, useEffect} from "react";
 import NavMain from "./nav-items/nav-main";
 import "./App.css";
 
-function App() {
+const App: React.FC = () => {
 
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
-  const isMobile = windowSize < 1042;
+  const [windowSize, setWindowSize] = useState<number>(window.innerWidth)
+  const isMobile:boolean = windowSize < 1042;
 
   React.useEffect(() => {
     // https://blog.logrocket.com/developing-responsive-layouts-with-react-hooks/

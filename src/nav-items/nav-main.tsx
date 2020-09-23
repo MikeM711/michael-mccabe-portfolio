@@ -1,7 +1,7 @@
 import React from "react";
 import profileImage from "../img/michael-pic.png";
 
-function NavMain() {
+const NavMain: React.FC = () => {
   return (
     <div className="row nav-main valign-wrapper">
       <div className="col ">
