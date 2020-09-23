@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div id="App" className="container">
+    <div id="app" className="container">
       {isMobile ? (
         <div>Hello mobile</div>
       ) : (

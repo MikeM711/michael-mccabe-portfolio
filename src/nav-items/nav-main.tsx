@@ -17,7 +17,7 @@ function NavMain() {
             <img
               src={profileImage}
               alt="profile-image"
-              style={{ filter: "brightness(0%)" }}
+              style={{ filter: "brightness(100%)" }}
             />
           </div>
         </div>
