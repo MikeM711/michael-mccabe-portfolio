@@ -1,0 +1,30 @@
+.tabs {
+    background-color: transparent;
+}
+
+.tabs .tab a {
+    color: white;
+    opacity: .65;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color: white;
+    opacity: 1;
+}
+
+.tabs .tab a:focus.active {
+    color:white;
+    background-color: transparent;
+  }
+
+.tabs .tab a{
+    color: none
+}
+
+
+.tabs .indicator {
+    background-color: white;
+    height: 3px !important;
+    margin-left: 5%;
+    margin-right: 5%;
+}
