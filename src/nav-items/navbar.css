@@ -24,7 +24,6 @@
     color: none
 }
 
-
 .tabs .indicator {
     background-color: white;
     height: 3px !important;
@@ -32,38 +31,14 @@
     margin-right: 5%;
 }
 
-.descriptors {
-    margin-bottom:15px;
-    overflow: hidden;
-    height: 100%;
-    visibility: hidden;
+.tabs .tab a:hover span {
+    opacity: 1;
+    transition: .3s
 }
 
-.descriptors span{
-    background: black;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top:1px;
-    position: relative;
-    padding-top:5px;
-    padding-bottom:5px;
-}
-
-.descriptors span:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 10px 0 10px;
-    border-color: #000 transparent transparent transparent;
- }
-
- .tabs span{
+.tabs span{
+    opacity: 0;
+    transition: .3s;
     display: block;
     position: absolute;
     width: calc(16.66% - 18px);
