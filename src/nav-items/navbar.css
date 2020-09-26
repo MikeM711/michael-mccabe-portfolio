@@ -1,15 +1,18 @@
 .tabs {
     background-color: transparent;
+    overflow: visible;
 }
 
 .tabs .tab a {
     color: white;
     opacity: .65;
+    transition: .25s
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
     color: white;
     opacity: 1;
+    transition: .25s
 }
 
 .tabs .tab a:focus.active {
@@ -28,3 +31,60 @@
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.descriptors {
+    margin-bottom:15px;
+    overflow: hidden;
+    height: 100%;
+    visibility: hidden;
+}
+
+.descriptors span{
+    background: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top:1px;
+    position: relative;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.descriptors span:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #000 transparent transparent transparent;
+ }
+
+ .tabs span{
+    display: block;
+    position: absolute;
+    width: calc(16.66% - 18px);
+    top: -4em;
+    background: black;
+    text-transform: none; /* Allow casing */
+    line-height: 2.5em;
+    margin:-0;
+    margin-left: -14.75px;
+    
+ }
+
+ .tabs .tab span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: calc(((100% - 20px)/2));
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #000 transparent transparent transparent;
+ }
