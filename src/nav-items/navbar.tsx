@@ -5,7 +5,12 @@ import { faBolt, faChartBar, faCode, faHome, faLayerGroup, faToolbox } from '@fo
 
 import './navbar.css';
 
-const NavBar: React.FC = () => {
+interface Props {
+  handleNavItem: (item: string) => void;
+}
+
+const NavBar: React.FC<Props> = ({handleNavItem}) => {
+
   useEffect(() => {
     // tabs initialization
     const elem = document.querySelectorAll(".tabs");
@@ -13,48 +18,53 @@ const NavBar: React.FC = () => {
     const instance = M.Tabs.init(elem, options);
   }, []);
 
+  // https://stackoverflow.com/a/56863941
+  const handleClick = (item:string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    handleNavItem(item);
+  }
+
   return (
     <div className="site-navbar">
       <div className="row">
         <div className="col s12">
           <ul className="tabs">
             <li className="tab col l2">
-              <a className="active home" href="#home">
+              <a className="active" href="#home" onClick={handleClick("home")}>
                 <span>Home</span>
                 <FontAwesomeIcon className="home fa-3x" icon={faHome} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#experience">
+              <a href="#experience" onClick={handleClick("experience")}>
               <span>Experience</span>
                 <FontAwesomeIcon className="experience fa-3x" icon={faToolbox} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#open-source">
+              <a href="#open-source" onClick={handleClick("open-source")}>
               <span>Open Source</span>
                 <FontAwesomeIcon className="open-source fa-3x" icon={faCode} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#projects">
+              <a href="#projects" onClick={handleClick("projects")}>
               <span>Projects</span>
                 <FontAwesomeIcon className="projects fa-3x" icon={faLayerGroup} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#presentations">
+              <a href="#presentations" onClick={handleClick("presentations")}>
                 <span>Presentations</span>
                 <FontAwesomeIcon className="presentations fa-3x" icon={faChartBar} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#current">
+              <a href="#current" onClick={handleClick("current")}>
               <span>Current</span>
               <FontAwesomeIcon className="current fa-3x" icon={faBolt} />
               </a>
