@@ -36,6 +36,8 @@ const App: React.FC = () => {
             <div className="col l12">
               <NavBar handleNavItem={handleNavItem} />
               <div className="main-card card">
+                {activeComponent === "home" ? 
+                
                 <CSSTransition
                   timeout={{
                     enter: 800,
@@ -50,7 +52,10 @@ const App: React.FC = () => {
                     <div className="overlay"></div>
                   </>
                 </CSSTransition>
-
+                : false}
+                
+                {activeComponent === "experience" ? 
+                
                 <CSSTransition
                   timeout={{
                     enter: 800,
@@ -65,6 +70,9 @@ const App: React.FC = () => {
                     <div className="overlay"></div>
                   </>
                 </CSSTransition>
+                
+                : false}
+                
               </div>
             </div>
           </div>

@@ -1,3 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgb(191, 239, 255),
+   rgb(64, 204, 255));
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
 #app {
   text-align: center;
 }
@@ -18,19 +31,6 @@
   padding-top: 18vh;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  height: 100%;
-  background-image: linear-gradient(180deg, rgb(191, 239, 255),
-   rgb(64, 204, 255));
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-}
-
 .nav-main {
   animation: .4s ease-out 0s 1 wait, .4s ease-out .4s 1 slideInFromBottom;
   max-width: 950px;
@@ -46,15 +46,17 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 
-.fade-enter {
+/* CSS Transitions */
+/* Below handles the dynamic CSS Transition and the overlay for a white fading*/
+.fade-appear {
   opacity: 0;
 }
 
-.fade-enter .overlay {
+.fade-appear .overlay {
   opacity: 0;
 }
 
-.fade-enter-active {
+.fade-appear-active {
   opacity:1;
   transition-delay: .1s;
   transition-property: opacity;
@@ -62,11 +64,8 @@ body {
 }
 
 
-.fade-enter-active .overlay{
-  position: absolute; 
-  background: white; /* be white */
-  width: 100%;
-  height: 100%;
+.fade-appear-active .overlay{
+  background: white;
   opacity:0;
   transition-delay: .1s;
   transition-property: opacity;
@@ -75,21 +74,6 @@ body {
 
 /* When component has completed its animation */
 .fade-enter-done .overlay{
-  position: absolute; 
   background: white;
-  width: 100%;
-  height: 100%;
   opacity:0;
-}
-
-.fade-exit {
-  visibility: hidden;
-}
-
-.fade-exit-active {
-  visibility: hidden;
-}
-
-.fade-exit-done {
-  visibility: hidden;
 }
