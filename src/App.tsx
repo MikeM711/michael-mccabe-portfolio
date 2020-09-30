@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 import NavBar from "./nav-items/navbar";
 import NavHome from "./nav-items/nav-home";
 import NavExperience from "./nav-items/nav-experience";
+import NavOpenSource from './nav-items/nav-open-source';
+import NavProjects from './nav-items/nav-projects';
+import NavPresentations from './nav-items/nav-presentations';
+import NavCurrent from './nav-items/nav-current';
+
 import "./App.css";
 
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
   const [activeComponent, setActiveComponent] = useState<string>("home");
   const isMobile: boolean = windowSize < 1042;
+  const navItems = ["home", "experience", "open-source", "projects", "presentations", "current"];
 
   useEffect(() => {
     // https://blog.logrocket.com/developing-responsive-layouts-with-react-hooks/
@@ -36,42 +42,36 @@ const App: React.FC = () => {
             <div className="col l12">
               <NavBar handleNavItem={handleNavItem} />
               <div className="main-card card">
-                {activeComponent === "home" ? 
-                
-                <CSSTransition
-                  timeout={{
-                    enter: 800,
-                  }}
-                  appear={activeComponent === "home"}
-                  in={activeComponent === "home"}
-                  classNames="fade"
-                  unmountOnExit
-                >
-                  <>
-                    <NavHome />
-                    <div className="overlay"></div>
-                  </>
-                </CSSTransition>
-                : false}
-                
-                {activeComponent === "experience" ? 
-                
-                <CSSTransition
-                  timeout={{
-                    enter: 800,
-                  }}
-                  appear={activeComponent === "experience"}
-                  in={activeComponent === "experience"}
-                  classNames="fade"
-                  unmountOnExit
-                >
-                  <>
-                    <NavExperience />
-                    <div className="overlay"></div>
-                  </>
-                </CSSTransition>
-                
-                : false}
+
+                {navItems.map((navItem, idx) => {
+                  return(
+                    <div className="item-view" key={idx}>
+                      {activeComponent === navItem ? 
+                      
+                      <CSSTransition
+                        timeout={{
+                          enter: 800,
+                        }}
+                        appear={true}
+                        in={true}
+                        classNames="fade"
+                        unmountOnExit
+                      >
+                        <>
+                        {navItem === "home" ? <NavHome /> : false}
+                        {navItem === "experience" ? <NavExperience /> : false}
+                        {navItem === "open-source" ? <NavOpenSource /> : false}
+                        {navItem === "projects" ? <NavProjects /> : false}
+                        {navItem === "presentations" ? <NavPresentations /> : false}
+                        {navItem === "current" ? <NavCurrent /> : false}
+                          
+                          <div className="overlay"></div>
+                        </>
+                      </CSSTransition>
+                      : false}
+                    </div>
+                  )
+                })}
                 
               </div>
             </div>
