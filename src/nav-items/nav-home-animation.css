@@ -16,3 +16,16 @@ hr {
     margin-left:18px;
     padding-top: 3px;
 }
+
+.animation .cursor {
+    position: absolute;
+    width: 3px;
+    height: 28px;
+    margin-top: 1px;
+    margin-left: 3px;
+    background: rgb(253, 142, 38)
+}
+
+.nav-home-animation div{
+    text-align: left;
+}

@@ -61,11 +61,19 @@ const NavHomeAnimation: React.FC = () => {
     runAnimation();
   }, []);
 
-  const subText = stringDisplay.split("\n").map((str, idx) => {
+  const formattedSubText = stringDisplay.split("\n");
+
+  const subText = formattedSubText.map((str, idx) => {
     return (
-      <span key={idx}>
-        <p className="my-status">{str}</p>
-      </span>
+      <div key={idx}>
+        <span className="my-status">{str}</span>
+
+        {idx === formattedSubText.length - 1 ? (
+          <span className="cursor"></span>
+        ) : (
+          false
+        )}
+      </div>
     );
   });
 
