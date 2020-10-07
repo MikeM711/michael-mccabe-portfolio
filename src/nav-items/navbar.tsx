@@ -7,9 +7,10 @@ import './navbar.css';
 
 interface Props {
   handleNavItem: (item: string) => void;
+  activeComponent: string;
 }
 
-const NavBar: React.FC<Props> = ({handleNavItem}) => {
+const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
 
   useEffect(() => {
     // tabs initialization
@@ -29,43 +30,49 @@ const NavBar: React.FC<Props> = ({handleNavItem}) => {
         <div className="col s12">
           <ul className="tabs">
             <li className="tab col l2">
-              <a className="active" href="#home" onClick={handleClick("home")}>
+              <a className={activeComponent === "home" ? "active" : "inactive"} 
+                href="#home" onClick={handleClick("home")}>
                 <span>Home</span>
                 <FontAwesomeIcon className="home fa-3x" icon={faHome} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#experience" onClick={handleClick("experience")}>
-              <span>Experience</span>
+              <a className={activeComponent === "experience" ? "active" : "inactive"}
+                href="#experience" onClick={handleClick("experience")}>
+                <span>Experience</span>
                 <FontAwesomeIcon className="experience fa-3x" icon={faToolbox} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#open-source" onClick={handleClick("open-source")}>
-              <span>Open Source</span>
+              <a className={activeComponent === "open-source" ? "active" : "inactive"}
+                href="#open-source" onClick={handleClick("open-source")}>
+                <span>Open Source</span>
                 <FontAwesomeIcon className="open-source fa-3x" icon={faCode} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#projects" onClick={handleClick("projects")}>
-              <span>Projects</span>
+              <a className={activeComponent === "projects" ? "active" : "inactive"}
+                href="#projects" onClick={handleClick("projects")}>
+                <span>Projects</span>
                 <FontAwesomeIcon className="projects fa-3x" icon={faLayerGroup} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#presentations" onClick={handleClick("presentations")}>
+              <a className={activeComponent === "presentations" ? "active" : "inactive"}
+                href="#presentations" onClick={handleClick("presentations")}>
                 <span>Presentations</span>
                 <FontAwesomeIcon className="presentations fa-3x" icon={faChartBar} />
               </a>
             </li>
 
             <li className="tab col l2">
-              <a href="#current" onClick={handleClick("current")}>
-              <span>Current</span>
+              <a className={activeComponent === "current" ? "active" : "inactive"}
+                href="#current" onClick={handleClick("current")}>
+                <span>Current</span>
               <FontAwesomeIcon className="current fa-3x" icon={faBolt} />
               </a>
             </li>

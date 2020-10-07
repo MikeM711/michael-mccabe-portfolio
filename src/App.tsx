@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <div className="computer">
           <div className="row nav-main valign-wrapper">
             <div className="col l12">
-              <NavBar handleNavItem={handleNavItem} />
+              <NavBar handleNavItem={handleNavItem} activeComponent={activeComponent}/>
               <div className="main-card card">
 
                 {navItems.map((navItem, idx) => {

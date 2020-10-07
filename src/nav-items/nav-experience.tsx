@@ -12,6 +12,15 @@ const NavExperience: React.FC = () => {
           <p>long string</p>
           <p>long string</p>
           <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
+          <p>long string</p>
         </div>
       </div>
     </>
