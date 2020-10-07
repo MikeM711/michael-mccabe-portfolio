@@ -1,0 +1,16 @@
+.nav-home-animation .my-status {
+    color: hsl(0, 0%, 36%);
+    text-align: left;
+    padding-left: 12px;
+    font-size: 23px;
+}
+
+hr {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.nav-home-animation .animation {
+    background: rgb(240, 240, 240);
+    height: 75px;
+}

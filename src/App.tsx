@@ -33,7 +33,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div id="app" className="container">
+    <div id="app" className="app-root">
       {isMobile ? (
         <div>Hello mobile</div>
       ) : (
