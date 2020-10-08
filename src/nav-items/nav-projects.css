@@ -1,0 +1,34 @@
+.nav-projects {
+    padding-bottom: 50px;
+}
+
+.nav-projects img {
+    width: 100%;
+    border: solid;
+    border-color: rgb(25, 38, 53);
+    /* border-color: red; */
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-radius: 15px;
+    transform: rotateX(0deg) rotateY(50deg) rotateZ(10deg);
+    margin-bottom: 30px;
+    margin-top: 50px;
+    box-shadow: 2px -1.5px 0px rgb(145, 144, 144), /* silver line */
+                2px -0.25px 0px rgb(145, 144, 144), /* silver line bottom-left*/
+                5px -3px 0px rgb(44, 44, 44), /* top-left corner */
+                5px -2.5px 0px rgb(44, 44, 44),
+                5px -0.25px 0px rgb(44, 44, 44), /* bottom-right corner */
+                5px 0.25px 0px rgb(44, 44, 44), /* flattening bottom-right corner */
+                25px 5px 10px rgba(31, 37, 40, 0.33)
+}
+
+.first-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-description {
+    background: rgb(243, 243, 243);
+}

@@ -7,6 +7,16 @@ const NavHomeAnimation: React.FC = () => {
   // experience = "Past: Bachelor of Mechanical Engineering\nat SUNY Stony Brook University"
   const [stringDisplay, setStringDisplay] = useState<string>("");
 
+  /*
+
+  make the cursor blink when finished
+
+  */
+
+
+
+
+
   useEffect(() => {
     const insertString = (str: string) => {
       return new Promise((res, rej) => {
