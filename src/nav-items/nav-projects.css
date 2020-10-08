@@ -38,8 +38,9 @@
 
 .monitor-circle { 
     position:absolute;
-    margin-top:354px;
-    margin-left:-240px;
+    bottom: 0px;
+    margin-bottom:39px;
+    margin-left:-250px;
     height: 12px;
     width: 12px;
     background-color: rgb(145, 144, 144);
