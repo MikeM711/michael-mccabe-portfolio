@@ -20,8 +20,9 @@ const NavProjects: React.FC = () => {
           <h5>A web app that renders and captures youtube comments as well as comment characteristics.</h5>
           <h5>Allows users to sort through comments by a variety of filters.</h5>
           </div>
-          <div className="col l6">
+          <div className="col l6 project-thumb">
           <img src={youtubeScraper}/>
+          <span className="monitor-circle"></span>
           </div>
         </div>
         <div className="row">

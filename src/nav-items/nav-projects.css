@@ -12,7 +12,6 @@
     border-left-width: 15px;
     border-right-width: 15px;
     border-radius: 15px;
-    transform: rotateX(0deg) rotateY(50deg) rotateZ(10deg);
     margin-bottom: 30px;
     margin-top: 50px;
     box-shadow: 2px -1.5px 0px rgb(145, 144, 144), /* silver line */
@@ -31,4 +30,18 @@
 
 .project-description {
     background: rgb(243, 243, 243);
+}
+
+.project-thumb {
+    transform: rotateX(0deg) rotateY(50deg) rotateZ(10deg);
+}
+
+.monitor-circle { 
+    position:absolute;
+    margin-top:354px;
+    margin-left:-240px;
+    height: 12px;
+    width: 12px;
+    background-color: rgb(145, 144, 144);
+    border-radius: 50%;
 }
