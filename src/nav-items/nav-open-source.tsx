@@ -5,7 +5,8 @@ const NavOpenSource: React.FC = () => {
     <>
       <div className="card-stacked nav-open-source">
         <div className="card-content">
-          <h3>Open Source</h3>
+          <h3 className="card-title">Open Source</h3>
+          <hr/>
           <p>long string</p>
           <p>long string</p>
           <p>long string</p>

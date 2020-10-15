@@ -5,7 +5,8 @@ const NavExperience: React.FC = () => {
     <>
       <div className="card-stacked nav-experience">
         <div className="card-content">
-          <h3>Experience</h3>
+          <h3 className="card-title">Experience</h3>
+          <hr/>
           <p>long string</p>
           <p>long string</p>
           <p>long string</p>

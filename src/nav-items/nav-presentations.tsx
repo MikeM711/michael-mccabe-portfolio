@@ -5,7 +5,8 @@ const NavPresentations: React.FC = () => {
     <>
       <div className="card-stacked nav-presentations">
         <div className="card-content">
-          <h3>Presentations</h3>
+          <h3 className="card-title">Presentations</h3>
+          <hr/>
           <p>long string</p>
           <p>long string</p>
           <p>long string</p>

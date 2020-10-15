@@ -18,7 +18,7 @@ const NavHome: React.FC = () => {
       <div className="card-image col l6">
         <img
           src={profileImage}
-          alt="profile-image"
+          alt="profile"
           style={{ filter: "brightness(100%)" }}
         />
       </div>
