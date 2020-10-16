@@ -30,6 +30,10 @@
 
 .project-description {
     background: rgb(243, 243, 243);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: column;
 }
 
 .project-thumb {
@@ -52,13 +56,14 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 2px;
+    align-content: flex-start;
     font-family: "source sans pro" sans-serif;
     font-size: 30px;
     color: rgb(66, 66, 66);
     font-weight: 400;
 }
 
-.project-description .project-description{
+.project-description .project-content{
     padding-left: 20px;
     padding-right: 20px;
     font-size: 15px;
@@ -66,6 +71,7 @@
     line-height: 2em;
     color: #777;
     font-family: source sans pro, sans-serif;
+    flex: 1 0 auto;
 }
 
 .card-content .card-title {
@@ -77,6 +83,9 @@
 .github-stats-card {
     font-size: 20px;
     height:30px;
+    background: rgb(255, 255, 131, .5);
+    text-align: center;
+    margin: 5px;
 }
 
 .code-fork {
@@ -88,5 +97,18 @@
 }
 
 .github-stats-card-wait {
+    display: inline;
+    color: rgb(66, 66, 66);
     height:30px;
+    vertical-align: middle;
+}
+
+.links-card {
+    flex-shrink: 0;
+    background:rgba(177, 204, 255, 0.3)
+}
+.links-card p{
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }

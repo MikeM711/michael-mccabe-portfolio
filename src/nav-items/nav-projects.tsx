@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import youtubeScraper from "../img/youtube-scraper.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch } from "@fortawesome/free-solid-svg-icons";
-import axios from "axios";
+import { faCodeBranch, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import "./nav-projects.css";
 
-const NavProjects: React.FC = () => {
-  const [repositories, setRepositories] = useState<any[]>([]);
+interface Props {
+  repositories: any[];
+}
 
-  useEffect(() => {
-    axios.get(`https://api.github.com/users/MikeM711/repos`).then((res) => {
-      setRepositories(res.data);
-    });
-  }, []);
+const NavProjects: React.FC<Props> = ({repositories}) => {
   let youtubeScraperRepo;
   let handwritingRecognitionRepo;
   let parseitRepo;
@@ -56,16 +52,25 @@ const NavProjects: React.FC = () => {
                 Loading GitHub stats...
               </div>
             )}
-
-            <p className="project-description">
-              A web app that uses a bot to render and capture YouTube comments,
-              as well as comment characteristics, on a given YouTube video.
-            </p>
-            <p className="project-description">
-              When the application is supplied with comments, users are able to
-              filter comments using variety of filter functions that can be
-              chained together.
-            </p>
+            <div className="project-content">
+              <p>
+                This web application uses a bot to render and capture YouTube comments,
+                as well as comment characteristics, on a given YouTube video.
+              </p>
+              <p>
+                When the application is supplied with comments, users are able to
+                filter comments using variety of filter functions that can be
+                chained together.
+              </p>
+            </div>
+            <div className="links-card row">
+              <p className="col l6">&lt;/&gt; Code</p>
+              <p className="col l6">
+              <FontAwesomeIcon
+                    className="code-fork fa-1x"
+                    icon={faLaptopCode}
+                  /> Demo</p>
+            </div>
           </div>
           <div className="col l6 project-thumb">
             <img alt="youtube-scraper" src={youtubeScraper} />

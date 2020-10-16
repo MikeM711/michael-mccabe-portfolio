@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
+import axios from "axios";
 
 import NavBar from "./nav-items/navbar";
 import NavHome from "./nav-items/nav-home";
@@ -14,6 +15,8 @@ import "./App.css";
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
   const [activeComponent, setActiveComponent] = useState<string>("home");
+  const [repositories, setRepositories] = useState<any[]>([]);
+
   const isMobile: boolean = windowSize < 1042;
   const navItems = ["home", "experience", "open-source", "projects", "presentations", "current"];
 
@@ -22,6 +25,10 @@ const App: React.FC = () => {
     /* Inside of a "useEffect" hook add an event listener that updates
        the "width" state variable when the window size changes */
     window.addEventListener("resize", () => setWindowSize(window.innerWidth));
+
+    axios.get(`https://api.github.com/users/MikeM711/repos`).then((res) => {
+      setRepositories(res.data);
+    });
 
     /* passing an empty array as the dependencies of the effect will cause this
        effect to only run when the component mounts, and not each time it updates.
@@ -61,7 +68,8 @@ const App: React.FC = () => {
                         {navItem === "home" ? <NavHome /> : false}
                         {navItem === "experience" ? <NavExperience /> : false}
                         {navItem === "open-source" ? <NavOpenSource /> : false}
-                        {navItem === "projects" ? <NavProjects /> : false}
+                        {navItem === "projects" ? <NavProjects 
+                        repositories={repositories}/> : false}
                         {navItem === "presentations" ? <NavPresentations /> : false}
                         {navItem === "current" ? <NavCurrent /> : false}
                           
