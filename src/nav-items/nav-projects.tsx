@@ -1,7 +1,10 @@
 import React from "react";
 import youtubeScraper from "../img/youtube-scraper.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCodeBranch, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import handwritingRecognition from "../img/handwriting-recognition.png";
+import parseit from "../img/parseit.png";
+import ProjectCard from '../nav-item-components/project-card';
+import ProjectTabletDisplay from '../nav-item-components/project-tablet-display';
+
 import "./nav-projects.css";
 
 interface Props {
@@ -12,6 +15,8 @@ const NavProjects: React.FC<Props> = ({repositories}) => {
   let youtubeScraperRepo;
   let handwritingRecognitionRepo;
   let parseitRepo;
+
+  // Find repositories for desired projects
   for (let repo of repositories) {
     if (repo.name === "React-YouTube-Comment-Section-Scraper") {
       youtubeScraperRepo = repo;
@@ -21,7 +26,6 @@ const NavProjects: React.FC<Props> = ({repositories}) => {
       parseitRepo = repo;
     }
   }
-  console.log(handwritingRecognitionRepo);
 
   return (
     <>
@@ -30,57 +34,65 @@ const NavProjects: React.FC<Props> = ({repositories}) => {
           <h3 className="card-title">Projects</h3>
           <hr />
         </div>
-        <div className="row first-project">
-          <div className="col offset-l1 l5 project-description">
-            <p className="project-title">Youtube Comment Scraper</p>
 
-            {youtubeScraperRepo !== undefined ? (
-              <div className="github-stats-card">
-                <span className="star-count">
-                  {youtubeScraperRepo.stargazers_count} ⭐️
-                </span>
-                <span className="fork-count">
-                  {youtubeScraperRepo.forks_count}
-                  <FontAwesomeIcon
-                    className="code-fork fa-1x"
-                    icon={faCodeBranch}
-                  />
-                </span>
-              </div>
-            ) : (
-              <div className="github-stats-card-wait">
-                Loading GitHub stats...
-              </div>
-            )}
-            <div className="project-content">
-              <p>
-                This web application uses a bot to render and capture YouTube comments,
-                as well as comment characteristics, on a given YouTube video.
-              </p>
-              <p>
-                When the application is supplied with comments, users are able to
-                filter comments using variety of filter functions that can be
-                chained together.
-              </p>
-            </div>
-            <div className="links-card row">
-              <p className="col l6">&lt;/&gt; Code</p>
-              <p className="col l6">
-              <FontAwesomeIcon
-                    className="code-fork fa-1x"
-                    icon={faLaptopCode}
-                  /> Demo</p>
-            </div>
-          </div>
+        <div className="row project-listing first-project">
+          <ProjectCard 
+            repo={parseitRepo}
+            title={'ParseIt'}
+            description={['A full-stack web tool that allows non-technical people the ability to extract information, or perform data science, for large amounts of PDF documents or complex text data.',
+            'ParseIt comes with 21 simple, open-ended modules that can either add, remove, replace, split or save text. The purpose of ParseIt is to "stack" these modules on top of each other, and have your input funneled through each module',
+            'The tool incorporates text-preview features that use text highlighting to let the user know exactly how they are parsing their data before they commit to a parsing action.']}
+          />
+          
           <div className="col l6 project-thumb">
-            <img alt="youtube-scraper" src={youtubeScraper} />
-            <span className="monitor-circle"></span>
+            <ProjectTabletDisplay
+              alt="parseIt"
+              appImage={parseit}
+            />
+          </div>
+          
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div className="row project-listing second-project">
+          <ProjectCard 
+            repo={youtubeScraperRepo}
+            title={'YouTube Comment Scraper'}
+            description={['A web application that uses a bot to render and capture YouTube comments, as well as comment characteristics, on a given YouTube video.', 
+            'When the application is supplied with comments, users are able to filter comments using variety of filter functions that can be chained together.']}
+          />
+          
+          <div className="col l6 project-thumb">
+            <ProjectTabletDisplay
+              alt="youtube-scraper"
+              appImage={youtubeScraper}
+            />
           </div>
         </div>
-        <div className="row">
-          <br />
-          New Project Row
+        <br/>
+        <br/>
+        <br/>
+        <div className="row project-listing third-project">
+          <ProjectCard 
+            repo={handwritingRecognitionRepo}
+            title={'Handwriting Recognition'}
+            description={['A web tool that utilizes pre-trained deep learning models to predict users\' handwriting.', 
+            'The full A.I. network utilizes a jury of 5 convolutional models to create a singular prediction.', 
+            'See my Python Notebook inside the Code link for more detail on how these models were trained.']}
+          />
+          
+          <div className="col l6 project-thumb">
+            <ProjectTabletDisplay
+              alt="handwriting-recognition"
+              appImage={handwritingRecognition}
+            />
+          </div>
+          
         </div>
+
       </div>
     </>
   );

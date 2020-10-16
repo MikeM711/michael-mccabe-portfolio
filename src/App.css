@@ -9,6 +9,7 @@ body {
    rgb(64, 204, 255));
    background-repeat: no-repeat;
    background-attachment: fixed;
+   overflow-y: scroll
 }
 
 #app {

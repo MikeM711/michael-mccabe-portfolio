@@ -23,7 +23,7 @@
                 25px 5px 10px rgba(31, 37, 40, 0.33)
 }
 
-.first-project {
+.project-listing {
     display: flex;
     flex-wrap: wrap;
 }
@@ -53,6 +53,8 @@
 }
 
 .project-description .project-title{
+    margin-top: 15px;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 2px;
@@ -64,8 +66,8 @@
 }
 
 .project-description .project-content{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 15px;
     text-align: left;
     line-height: 2em;
