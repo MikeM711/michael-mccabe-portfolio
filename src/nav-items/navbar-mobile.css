@@ -1,0 +1,11 @@
+.mobile-site-navbar {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile-site-navbar .tabs .indicator {
+    background-color: white;
+    height: 3px !important;
+
+}

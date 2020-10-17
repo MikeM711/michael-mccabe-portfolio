@@ -24,7 +24,7 @@
     color: none
 }
 
-.tabs .indicator {
+.site-navbar .tabs .indicator {
     background-color: white;
     height: 3px !important;
     margin-left: 5%;

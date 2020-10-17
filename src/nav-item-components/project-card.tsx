@@ -31,8 +31,8 @@ const ProjectCard: React.FC<Props> = ({ repo, title, description }) => {
         })}
       </div>
       <div className="links-card row">
-        <p className="col l6">&lt;/&gt; Code</p>
-        <p className="col l6">
+        <p className="col l6 m6 s6">&lt;/&gt; Code</p>
+        <p className="col l6 m6 s6">
           <FontAwesomeIcon className="code-fork fa-1x" icon={faLaptopCode} />{" "}
           Demo
         </p>

@@ -3,6 +3,7 @@ import { CSSTransition } from "react-transition-group";
 import axios from "axios";
 
 import NavBar from "./nav-items/navbar";
+import NavBarMobile from "./nav-items/navbar-mobile";
 import NavHome from "./nav-items/nav-home";
 import NavExperience from "./nav-items/nav-experience";
 import NavOpenSource from './nav-items/nav-open-source';
@@ -11,6 +12,9 @@ import NavPresentations from './nav-items/nav-presentations';
 import NavCurrent from './nav-items/nav-current';
 
 import "./App.css";
+import ProjectCard from "./nav-item-components/project-card";
+import ProjectTabletDisplay from "./nav-item-components/project-tablet-display";
+import handwritingRecognition from "./img/handwriting-recognition.png";
 
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
@@ -39,12 +43,46 @@ const App: React.FC = () => {
     setActiveComponent(item);
   };
 
+  let youtubeScraperRepo;
+  let handwritingRecognitionRepo;
+  let parseitRepo;
+  for (let repo of repositories) {
+    if (repo.name === "React-YouTube-Comment-Section-Scraper") {
+      youtubeScraperRepo = repo;
+    } else if (repo.name === "Deep-Learning-Handwriting-Recognition") {
+      handwritingRecognitionRepo = repo;
+    } else if (repo.name === "ParseIt") {
+      parseitRepo = repo;
+    }
+  }
+
   return (
     <div id="app" className="app-root">
       {isMobile ? (
-        <div>Hello mobile</div>
+        <div className="mobile">
+          
+          <NavBarMobile handleNavItem={handleNavItem} activeComponent={activeComponent}/>
+          <div className="project-listing-mobile">
+          <ProjectCard 
+            repo={handwritingRecognitionRepo}
+            title={'Handwriting Recognition'}
+            description={['A web tool that utilizes pre-trained deep learning models to predict users\' handwriting.', 
+            'The full A.I. network utilizes a jury of 5 convolutional models to create a singular prediction.', 
+            'See my Python Notebook inside the Code link for more detail on how these models were trained.']}
+          />
+          <br/>
+          
+          <div className="project-thumb project-thumb-mobile">
+          <ProjectTabletDisplay
+              alt="handwriting-recognition"
+              appImage={handwritingRecognition}
+            />
+          </div>
+          </div>
+        </div>
+        
       ) : (
-        <div className="computer">
+        <div className="desktop">
           <div className="row nav-main valign-wrapper">
             <div className="col l12">
               <NavBar handleNavItem={handleNavItem} activeComponent={activeComponent}/>
