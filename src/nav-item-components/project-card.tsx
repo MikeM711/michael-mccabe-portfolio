@@ -26,8 +26,8 @@ const ProjectCard: React.FC<Props> = ({ repo, title, description }) => {
         <div className="github-stats-card-wait">Loading GitHub stats...</div>
       )}
       <div className="project-content">
-        {description.map((singleDescription) => {
-          return <p>{singleDescription}</p>;
+        {description.map((singleDescription, idx) => {
+          return <p key={idx}>{singleDescription}</p>;
         })}
       </div>
       <div className="links-card row">
