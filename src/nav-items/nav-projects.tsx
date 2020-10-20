@@ -79,7 +79,7 @@ const NavProjects: React.FC<Props> = ({repositories}) => {
           <ProjectCard 
             repo={handwritingRecognitionRepo}
             title={'Handwriting Recognition'}
-            description={['A web tool that utilizes pre-trained deep learning models to predict users\' handwriting.', 
+            description={['A web tool that utilizes pre-trained deep learning models to predict users\' handwriting using a resizable drawing canvas.', 
             'The full A.I. network utilizes a jury of 5 convolutional models to create a singular prediction.', 
             'See my Python Notebook inside the Code link for more detail on how these models were trained.']}
           />

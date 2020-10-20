@@ -12,6 +12,7 @@ import NavPresentations from './nav-items/nav-presentations';
 import NavCurrent from './nav-items/nav-current';
 
 import "./App.css";
+import "./App-mobile.css";
 import ProjectCard from "./nav-item-components/project-card";
 import ProjectTabletDisplay from "./nav-item-components/project-tablet-display";
 import handwritingRecognition from "./img/handwriting-recognition.png";
@@ -60,24 +61,27 @@ const App: React.FC = () => {
     <div id="app" className="app-root">
       {isMobile ? (
         <div className="mobile">
-          
           <NavBarMobile handleNavItem={handleNavItem} activeComponent={activeComponent}/>
-          <div className="project-listing-mobile">
-          <ProjectCard 
-            repo={handwritingRecognitionRepo}
-            title={'Handwriting Recognition'}
-            description={['A web tool that utilizes pre-trained deep learning models to predict users\' handwriting.', 
-            'The full A.I. network utilizes a jury of 5 convolutional models to create a singular prediction.', 
-            'See my Python Notebook inside the Code link for more detail on how these models were trained.']}
-          />
-          <br/>
+          <div className="card mobile-card">
           
-          <div className="project-thumb project-thumb-mobile">
-          <ProjectTabletDisplay
-              alt="handwriting-recognition"
-              appImage={handwritingRecognition}
-            />
-          </div>
+            <div className="project-listing-mobile">
+              <ProjectCard 
+                repo={handwritingRecognitionRepo}
+                title={'Handwriting Recognition'}
+                description={['A web tool that utilizes pre-trained deep learning models to predict users\' handwriting using a resizable drawing canvas.', 
+                'The full A.I. network utilizes a jury of 5 convolutional models to create a singular prediction.', 
+                'See my Python Notebook inside the Code link for more detail on how these models were trained.']}
+              />
+              <br/>
+              
+              <div className="project-thumb project-thumb-mobile">
+              <ProjectTabletDisplay
+                  alt="handwriting-recognition"
+                  appImage={handwritingRecognition}
+                />
+              </div>
+
+            </div>
           </div>
         </div>
         
