@@ -40,11 +40,6 @@
     height: 100%;
     transform: rotateX(0deg) rotateY(50deg) rotateZ(10deg);
 }
-.project-thumb-mobile {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .monitor-circle { 
     position:absolute;
@@ -114,7 +109,14 @@
     flex-shrink: 0;
     background:rgba(177, 204, 255, 0.3);
     margin-bottom: 0px;
+    height: 55px;
 }
+
+.links-card .col{
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
 .links-card p{
     font-size: 20px;
     margin-bottom: 0px;

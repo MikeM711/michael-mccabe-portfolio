@@ -9,7 +9,7 @@ interface Props {
   repositories: any[];
 }
 
-const NavProjects: React.FC<Props> = ({ repositories }) => {
+const MobileProjects: React.FC<Props> = ({ repositories }) => {
   return (
     <>
       <div className="card-stacked nav-projects">
@@ -51,4 +51,4 @@ const NavProjects: React.FC<Props> = ({ repositories }) => {
   );
 };
 
-export default NavProjects;
+export default MobileProjects;
