@@ -1,0 +1,8 @@
+.skill-listing .col p{
+    font-size: 25px;
+    /* Center using flexbox */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

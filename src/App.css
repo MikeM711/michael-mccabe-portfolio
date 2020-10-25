@@ -12,6 +12,35 @@ body {
    overflow-y: scroll;
 }
 
+.nav-experience p, .nav-open-source p, .nav-presentations p, .nav-current p{
+  padding-left: 23px;
+  padding-right: 23px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 2.25em;
+  color: #777;
+  font-family: source sans pro, sans-serif;
+  padding-bottom: 15px;
+}
+
+.card-content .card-title {
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.card-content .card-sub-title {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+hr {
+  margin-left:25px;
+  margin-right:10px;
+  opacity: .5;
+}
+
 #app {
   text-align: center;
 }
