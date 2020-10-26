@@ -70,6 +70,22 @@ hr {
   max-width: 950px;
 }
 
+/* The "language/tool" span */
+.language-border span{
+  display: inline-block;
+  font-family: Arial;
+  border: solid;
+  padding: 0.35rem;
+  margin: 0.4rem;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  border-color: rgba(203, 213, 224);
+  background: rgb(248, 248, 248)
+}
+.language-border {
+  margin-top: 10px;
+}
+
 @keyframes wait {
   from { transform: translateY(50px); opacity:0 }
   to { transform: translateY(50px); opacity:0 }

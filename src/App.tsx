@@ -17,7 +17,7 @@ import "./App-mobile.css";
 
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
-  const [activeComponent, setActiveComponent] = useState<string>("home");
+  const [activeComponent, setActiveComponent] = useState<string>("open-source");
   const [repositories, setRepositories] = useState<any[]>([]);
 
   const isMobile: boolean = windowSize < 1042;
@@ -47,6 +47,9 @@ const App: React.FC = () => {
       {isMobile ? (
         <div className="mobile">
           <NavBarMobile handleNavItem={handleNavItem} activeComponent={activeComponent}/>
+          <div className="card mobile-card">
+            <NavOpenSource/> 
+          </div>
           <div className="card mobile-card">
             <NavExperience />
           </div>

@@ -7,9 +7,10 @@ interface Props {
   repo: any | undefined;
   title: string;
   description: string[];
+  tools: string[];
 }
 
-const ProjectCard: React.FC<Props> = ({ repo, title, description }) => {
+const ProjectCard: React.FC<Props> = ({ repo, title, description, tools }) => {
   return (
     <div className="col offset-l1 l5 project-description">
       <p className="project-title">{title}</p>
@@ -25,6 +26,13 @@ const ProjectCard: React.FC<Props> = ({ repo, title, description }) => {
       ) : (
         <div className="github-stats-card-wait">Loading GitHub stats...</div>
       )}
+
+      <div className="language-border">
+        {tools.map((tool, idx) => {
+          return <span key={idx}>{tool}</span>
+        })}
+      </div>
+
       <div className="project-content">
         {description.map((singleDescription, idx) => {
           return <p key={idx}>{singleDescription}</p>;

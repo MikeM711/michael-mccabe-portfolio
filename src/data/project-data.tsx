@@ -11,7 +11,8 @@ const projectData = [
         "The tool incorporates text-preview features that use text highlighting as a guide to let the user know exactly how they are parsing their data, before they commit to a parsing action."
         ],
         "projectImage": parseit,
-        "alt": "parseIt"
+        "alt": "parseIt",
+        "tools": ["JavaScript", "Node.js", "Express", "React/Redux"]
     },
     {
         "title": "YouTube Comment Scraper",
@@ -20,7 +21,8 @@ const projectData = [
         "When the application is supplied with comments, users are able to filter comments using variety of filter functions that can be chained together."
         ],
         "projectImage": youtubeScraper,
-        "alt": "youtube-scraper"
+        "alt": "youtube-scraper",
+        "tools": ["JavaScript", "Node.js", "Express", "React/Redux"]
     },
     {
         "title": "Handwriting Recognition",
@@ -30,7 +32,8 @@ const projectData = [
         "See my Python Notebook inside the Code link for more detail on how these models were trained."
         ],
         "projectImage": handwritingRecognition,
-        "alt": "handwriting-recognition"
+        "alt": "handwriting-recognition",
+        "tools": ["JavaScript", "Python", "Django", "React/Redux"]
     }
 ]
 

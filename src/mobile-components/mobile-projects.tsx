@@ -2,7 +2,7 @@ import React from "react";
 
 import ProjectCardMobile from "../nav-item-components/project-card-mobile";
 import ProjectTabletDisplay from "../nav-item-components/project-tablet-display";
-import projectData from "../project-data/project-data";
+import projectData from "../data/project-data";
 import './mobile-projects.css';
 
 interface Props {
@@ -33,6 +33,7 @@ const MobileProjects: React.FC<Props> = ({ repositories }) => {
               repo={projectRepo}
               title={project.title}
               description={project.description}
+              tools={project.tools}
             />
             <div className="project-thumb project-thumb-mobile">
               <ProjectTabletDisplay
