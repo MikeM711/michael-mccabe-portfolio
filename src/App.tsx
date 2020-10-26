@@ -48,7 +48,10 @@ const App: React.FC = () => {
         <div className="mobile">
           <NavBarMobile handleNavItem={handleNavItem} activeComponent={activeComponent}/>
           <div className="card mobile-card">
-            <MobileProjects repositories={repositories}/>      
+            <NavExperience />
+          </div>
+          <div className="card mobile-card">
+            <MobileProjects repositories={repositories}/> 
           </div>
         </div>
         

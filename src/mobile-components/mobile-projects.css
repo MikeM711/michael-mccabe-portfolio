@@ -1,12 +1,34 @@
+.project-listing-mobile {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
 .project-thumb-mobile {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .project-listing-mobile .project-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.project-listing-mobile .project-content p{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.mobile .project-description {
+    margin-bottom: 30px;
+}
+
+.mobile .links-card p{
+    margin-top: 10px;
+}
+
+.mobile .project-title {
+    padding-top: 10px;
 }

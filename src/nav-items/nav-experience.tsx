@@ -10,17 +10,16 @@ const NavExperience: React.FC = () => {
           <h3 className="card-title">Experience</h3>
           <hr />
           <p>
-            Hi, my name is Michael McCabe and I am a Software Developer Master's
+            Hi, my name is Michael McCabe. I am a Software Developer Master's
             Student, Engineer and Open Source contributor.
           </p>
           <p>
-            During my Mechanical Engineering career, I have spent a considerable
-            amount of time working with both JavaScript and Python, and
-            frameworks such as React and Node.js, in my spare time. At work, I
-            have used these tools to both automate and maximize productivity. In
-            particular, I have developed a full-stack production planner web
-            application that solved many production-related business problems
-            for my employer.
+            When I was a Mechanical Engineer, I have spent a considerable amount
+            of time working with both JavaScript and Python, and frameworks such
+            as React and Node.js, in my spare time. At work, I have used these
+            tools to both automate and maximize productivity. In particular, I
+            developed a full-stack production planner web application that
+            solved many production-related business problems for my employer.
           </p>
           <p>
             After two years of being a Software Developer hobbyist, I have come
@@ -34,7 +33,7 @@ const NavExperience: React.FC = () => {
           <p>
             <b>Server-Side Web Development:</b> Hands-on web application
             development using Node.js, MongoDB (NoSQL), JavaScript, Express
-            along with PHP/MySQL experience.
+            along with PHP/MySQL.
           </p>
           <p>
             <b>Database Design and Implementation for Business:</b> A deep dive
@@ -48,28 +47,28 @@ const NavExperience: React.FC = () => {
           <hr />
           <h4 className="card-sub-title skills-sub-title">Skills</h4>
           <div className="row skill-listing center">
-            <div className="col l3">
-              <p className="center-align">JavaScript</p>
+            <div className="col l3 m6 s12">
+              <p>JavaScript</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>Python</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>Node.js</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>Express</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>React/Redux</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>MongoDB</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>PostgreSQL</p>
             </div>
-            <div className="col l3">
+            <div className="col l3 m6 s12">
               <p>HTML/CSS</p>
             </div>
           </div>

@@ -12,10 +12,14 @@ body {
    overflow-y: scroll;
 }
 
+.card-stacked {
+  padding-bottom: 30px;
+}
+
 .nav-experience p, .nav-open-source p, .nav-presentations p, .nav-current p{
   padding-left: 23px;
   padding-right: 23px;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
   line-height: 2.25em;
   color: #777;
@@ -37,7 +41,7 @@ body {
 
 hr {
   margin-left:25px;
-  margin-right:10px;
+  margin-right:25px;
   opacity: .5;
 }
 
