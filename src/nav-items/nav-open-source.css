@@ -91,6 +91,7 @@
   background: rgb(240, 240, 240);
   padding-top: 5px;
   padding-bottom: 20px;
+  margin-bottom: 50px !important;
 }
 
 /* pull request anchor tags */
@@ -98,12 +99,49 @@
   text-align: center;
 }
 
+.pull-request .links .col {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+/* pull request title style */
+.pull-request-title h4{
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  align-content: flex-start;
+  font-family: "source sans pro" sans-serif;
+  font-size: 23px;
+  color: rgb(66, 66, 66);
+  font-weight: 400;
+}
+
 /* mozilla links */
 .links-container {
-  padding-bottom: 25px;
+  margin-bottom: 50px;
+  background: rgba(253, 219, 219, 0.348);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 1px;
+  margin-top: 30px;
+  padding-bottom: 0px;
+}
+
+.sub-title-links{
+  padding-bottom: 15px;
 }
 
 /* All pull request links */
 .pull-request .links .row {
   margin-bottom: 0px;
+}
+
+.pull-request .problem,  .pull-request .solution, .pull-request .links{
+  display: block;
+}
+
+.links-container a {
+  text-align: center
 }
