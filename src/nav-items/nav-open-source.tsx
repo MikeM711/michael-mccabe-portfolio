@@ -12,7 +12,6 @@ const NavOpenSource: React.FC = () => {
           <h3 className="card-title">Open Source</h3>
           <hr />
           <div className="links-container pull-request-title">
-            <h4 className="pr-sub-title">Mozilla Links</h4>
             <div className="row sub-title-links">
               <p className="col l12 m12 s12">
                 <a

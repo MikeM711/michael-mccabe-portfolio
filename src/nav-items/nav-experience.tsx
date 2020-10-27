@@ -16,7 +16,7 @@ const NavExperience: React.FC = () => {
           <p>
             When I was a Mechanical Engineer, I have spent a considerable amount
             of time working with both JavaScript and Python, and frameworks such
-            as React and Node.js, in my spare time. At work, I have used these
+            as React and Node.js in my spare time. At work, I have used these
             tools to both automate and maximize productivity. In particular, I
             developed a full-stack production planner web application that
             solved many production-related business problems for my employer.

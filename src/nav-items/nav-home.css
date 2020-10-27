@@ -1,0 +1,29 @@
+.arrow {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.65);
+    height: 5em;
+    width: 5em;
+    margin-right: 11px;
+    padding-top: 8px;
+    top: calc(50% - 2.5em);
+    right: 0;
+    color: white;
+    transition: 0.15s;
+}
+
+.arrow .code-fork {
+    vertical-align: middle
+}
+
+.card-image:hover .arrow{
+    width: 6em;
+    padding-right: 1em;
+    transition: 0.15s;
+}
+
+.card-image:hover {
+    cursor: pointer;
+}

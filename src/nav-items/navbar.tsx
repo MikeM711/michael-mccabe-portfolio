@@ -31,7 +31,7 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
           <ul className="tabs">
             <li className="tab col l2">
               <a className={activeComponent === "home" ? "active" : "inactive"} 
-                href="#home" onClick={handleClick("home")}>
+                href="#home" onClick={handleClick("home")} id="home_id">
                 <span>Home</span>
                 <FontAwesomeIcon className="home fa-3x" icon={faHome} />
               </a>
@@ -39,7 +39,7 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
 
             <li className="tab col l2">
               <a className={activeComponent === "experience" ? "active" : "inactive"}
-                href="#experience" onClick={handleClick("experience")}>
+                href="#experience" onClick={handleClick("experience")} id="experience_id">
                 <span>Experience</span>
                 <FontAwesomeIcon className="experience fa-3x" icon={faToolbox} />
               </a>
@@ -47,7 +47,7 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
 
             <li className="tab col l2">
               <a className={activeComponent === "open-source" ? "active" : "inactive"}
-                href="#open-source" onClick={handleClick("open-source")}>
+                href="#open-source" onClick={handleClick("open-source")} id="open-source_id">
                 <span>Open Source</span>
                 <FontAwesomeIcon className="open-source fa-3x" icon={faCode} />
               </a>
@@ -55,7 +55,7 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
 
             <li className="tab col l2">
               <a className={activeComponent === "projects" ? "active" : "inactive"}
-                href="#projects" onClick={handleClick("projects")}>
+                href="#projects" onClick={handleClick("projects")} id="projects_id">
                 <span>Projects</span>
                 <FontAwesomeIcon className="projects fa-3x" icon={faLayerGroup} />
               </a>
@@ -63,7 +63,7 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
 
             <li className="tab col l2">
               <a className={activeComponent === "presentations" ? "active" : "inactive"}
-                href="#presentations" onClick={handleClick("presentations")}>
+                href="#presentations" onClick={handleClick("presentations")} id="presentations_id">
                 <span>Presentations</span>
                 <FontAwesomeIcon className="presentations fa-3x" icon={faChartBar} />
               </a>
@@ -71,7 +71,7 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
 
             <li className="tab col l2">
               <a className={activeComponent === "current" ? "active" : "inactive"}
-                href="#current" onClick={handleClick("current")}>
+                href="#current" onClick={handleClick("current")} id="current_id">
                 <span>Current</span>
               <FontAwesomeIcon className="current fa-3x" icon={faBolt} />
               </a>
