@@ -32,6 +32,10 @@
     flex-direction: column;
 }
 
+.project-listing{
+    padding-left: 20px;
+}
+
 .project-thumb {
     height: 100%;
     transform: rotateX(0deg) rotateY(50deg) rotateZ(10deg);
