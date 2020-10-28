@@ -59,6 +59,9 @@ const App: React.FC = () => {
           <div className="card mobile-card">
             <NavPresentations /> 
           </div>
+          <div className="card mobile-card">
+            <NavCurrent />
+          </div>
         </div>
         
       ) : (

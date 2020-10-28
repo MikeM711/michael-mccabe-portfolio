@@ -19,7 +19,8 @@ const NavExperience: React.FC = () => {
             as React and Node.js in my spare time. At work, I have used these
             tools to both automate and maximize productivity. In particular, I
             developed a full-stack production planner web application that
-            solved many production-related business problems for my employer.
+            solved many production-related business problems for my employer,
+            saving $60k/yr in production costs.
           </p>
           <p>
             After two years of being a Software Developer hobbyist, I have come

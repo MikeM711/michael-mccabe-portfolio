@@ -15,7 +15,7 @@ const OSContributionsData = [
     problem:
       "If a user wishes to test their Mozilla extension on an Android build variant, they must write a redundant CLI command.",
     solution:
-      "A feature was introduced to allow condensed commands with additional unit tests.",
+      "A feature was introduced to allow condensed commands. Additional unit tests have been added.",
     prUrl: "https://github.com/mozilla/web-ext/pull/1941",
     submittedCodeUrl:
       "https://github.com/mozilla/web-ext/commit/c083c079ddad11031bfdf913852ea2e70f3d5ab3",
