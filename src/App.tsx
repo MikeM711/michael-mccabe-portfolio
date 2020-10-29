@@ -3,7 +3,7 @@ import { CSSTransition } from "react-transition-group";
 import axios from "axios";
 
 import NavBar from "./nav-items/navbar";
-import NavBarMobile from "./nav-items/navbar-mobile";
+import NavBarMobile from "./mobile-components/navbar-mobile";
 import NavHome from "./nav-items/nav-home";
 import NavExperience from "./nav-items/nav-experience";
 import NavOpenSource from './nav-items/nav-open-source';
@@ -11,6 +11,7 @@ import NavProjects from './nav-items/nav-projects';
 import NavPresentations from './nav-items/nav-presentations';
 import NavCurrent from './nav-items/nav-current';
 import MobileProjects from './mobile-components/mobile-projects';
+import HomeMobile from './mobile-components/home-mobile';
 
 import "./App.css";
 import "./App-mobile.css";
@@ -36,6 +37,15 @@ const App: React.FC = () => {
     /* passing an empty array as the dependencies of the effect will cause this
        effect to only run when the component mounts, and not each time it updates.
        We only want the listener to be added once */
+
+    // get hash coming in
+    const hash = String(window.location.hash);
+    for (const navItem of navItems) {
+      if (navItem === hash.slice(1)) {
+        setActiveComponent(navItem);
+      }
+    }
+
   }, []);
 
   const handleNavItem = (item: string) => {
@@ -44,22 +54,25 @@ const App: React.FC = () => {
 
   return (
     <div id="app" className="app-root">
-      {isMobile ? (
+      {isMobile ? ( 
         <div className="mobile">
           <NavBarMobile handleNavItem={handleNavItem} activeComponent={activeComponent}/>
-          <div className="card mobile-card">
+          <div className="card mobile-card" id="home">
+            <HomeMobile />
+          </div>
+          <div className="card mobile-card" id="experience">
             <NavExperience />
           </div>
-          <div className="card mobile-card">
+          <div className="card mobile-card" id="open-source">
             <NavOpenSource/> 
           </div>
-          <div className="card mobile-card">
+          <div className="card mobile-card" id="projects">
             <MobileProjects repositories={repositories}/> 
           </div>
-          <div className="card mobile-card">
+          <div className="card mobile-card" id="presentations">
             <NavPresentations /> 
           </div>
-          <div className="card mobile-card">
+          <div className="card mobile-card" id="current">
             <NavCurrent />
           </div>
         </div>

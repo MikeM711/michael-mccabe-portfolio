@@ -22,6 +22,10 @@ const NavBar: React.FC<Props> = ({handleNavItem, activeComponent}) => {
   // https://stackoverflow.com/a/56863941
   const handleClick = (item:string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
     handleNavItem(item);
+
+    // Add item hash to URL
+    // This is becuase materialize prevents default hash value actions 
+    window.location.href = "#" + item;
   }
 
   return (

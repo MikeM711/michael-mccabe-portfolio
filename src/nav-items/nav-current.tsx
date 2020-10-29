@@ -11,15 +11,15 @@ const NavCurrent: React.FC = () => {
           <hr />
           <h4 className="card-sub-title">InfinitePython</h4>
           <p>
-            InfintePython is hi currently my most significant side-project. It is
+            InfintePython is currently my most significant side-project. It is
             built using TypeScript, Node.js, Express and React.
           </p>
           <p>
             <b>Problem:</b> Similarly to learning how to drive a car, learning
             Python (or any language) requires both studying and putting your
-            skills to the test. There are a lot of good Python study resources
-            on the internet, but very few will test your fundamental skills
-            effectively.
+            skills to the test. There are a lot of good study resources for
+            Python on the internet, but very few will really test your
+            fundamental skills effectively.
           </p>
 
           <p>
@@ -39,8 +39,22 @@ const NavCurrent: React.FC = () => {
             to answer.
           </p>
 
+          <p>See the demo video below.</p>
+
+          <div className="iframe-wrapper">
+            <div className="iframe-container">
+              <iframe
+                src="https://www.youtube.com/embed/OAa1LcLRLFg?rel=0;"
+                frameBorder="0"
+                allow="encrypted-media"
+                allowFullScreen
+                title="video"
+              />
+            </div>
+          </div>
+
           <p>
-            Some Future Plans:
+            A Few Future Plans:
             <ul>
               <li>
                 Develop more questions for significant Python topics (ie:

@@ -29,6 +29,9 @@ const NavExperience: React.FC = () => {
             Development Master program (online) ever since.
           </p>
           <p>Expected graduation: August 2021</p>
+          <p></p>
+          <p></p>
+          <p style={{color:"red"}}>talk about open source and less focus on classes?</p>
           <hr />
           <h4 className="card-sub-title">Courses Completed</h4>
           <p>

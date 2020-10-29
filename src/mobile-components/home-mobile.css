@@ -1,0 +1,11 @@
+.nav-home-mobile {
+  padding-bottom: 30px;
+}
+
+.card-image-mobile img {
+  height: 100%;
+  width: 100%;
+  max-width: 450px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
