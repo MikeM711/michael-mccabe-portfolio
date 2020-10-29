@@ -12,15 +12,10 @@ import NavPresentations from './nav-items/nav-presentations';
 import NavCurrent from './nav-items/nav-current';
 import MobileProjects from './mobile-components/mobile-projects';
 import HomeMobile from './mobile-components/home-mobile';
+import Contact from './nav-item-components/contact';
 
 import "./App.css";
 import "./App-mobile.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import gitIcon from './img/icons/GitHub-Mark-Light-120px-plus.png';
-import liIcon from './img/icons/linkedin-icon.png';
-import { faInbox, faFileWord } from '@fortawesome/free-solid-svg-icons';
-import Pdf from './docs/resume.pdf';
 
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
@@ -88,6 +83,7 @@ const App: React.FC = () => {
           <div className="card mobile-card" id="current">
             <NavCurrent />
           </div>
+          <Contact />
         </div>
         
       ) : (
@@ -128,31 +124,7 @@ const App: React.FC = () => {
                   )
                 })}
               </div>
-            
-              <div className="row contact-information">
-                <a href="mailto:michaelmccabe711@gmail.com" target="_blank">
-                  <FontAwesomeIcon className="fa fa-inbox fa-3x" icon={faInbox} />
-                </a>
-
-                <span className="dot-separator"></span>
-
-                <a href="https://github.com/MikeM711" target="_blank">
-                  <img className="git-icon" src={gitIcon} alt="git-icon"/>
-                </a>
-
-                <span className="dot-separator"></span>
-
-                <a href="https://www.linkedin.com/in/michaelmccabe711/" target="_blank">
-                  <img className="li-icon" src={liIcon} alt="li-icon"/>
-                </a>
-
-                <span className="dot-separator"></span>
-
-                <a href={Pdf} target="_blank">
-                  <FontAwesomeIcon className="fa fa-resume fa-3x" icon={faFileWord} />
-                </a>
-              </div>
-
+              <Contact />
             </div>
           </div>
         </div>
