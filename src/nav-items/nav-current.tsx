@@ -39,7 +39,7 @@ const NavCurrent: React.FC = () => {
             to answer.
           </p>
 
-          <p>See the demo video below.</p>
+          <p>See the demo video below (expect the user interface to be updated)</p>
 
           <div className="iframe-wrapper">
             <div className="iframe-container">

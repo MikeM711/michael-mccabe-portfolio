@@ -23,15 +23,16 @@ const NavExperience: React.FC = () => {
             saving $60k/yr in production costs.
           </p>
           <p>
-            After two years of being a Software Developer hobbyist, I have come
-            to the conclusion that Software Development is the correct career
-            choice. I have been enrolled in Boston University's Software
-            Development Master program (online) ever since.
+            After two years of being a Software Developer hobbyist, I have
+            decided to enroll into Boston University's Software Development
+            Master program (online) and become a full-time Software Developer.
+            Expected graduation: August 2021.
           </p>
-          <p>Expected graduation: August 2021</p>
-          <p></p>
-          <p></p>
-          <p style={{color:"red"}}>talk about open source and less focus on classes?</p>
+
+          <p>
+            When I'm not studying for school, I am either contributing to open
+            source or working on my side-project, InfinitePython.
+          </p>
           <hr />
           <h4 className="card-sub-title">Courses Completed</h4>
           <p>

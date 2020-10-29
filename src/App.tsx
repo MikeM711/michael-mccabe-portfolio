@@ -38,15 +38,22 @@ const App: React.FC = () => {
        effect to only run when the component mounts, and not each time it updates.
        We only want the listener to be added once */
 
-    // get hash coming in
-    const hash = String(window.location.hash);
-    for (const navItem of navItems) {
-      if (navItem === hash.slice(1)) {
-        setActiveComponent(navItem);
+  }, []);
+
+  // case where desktop => mobile => desktop
+  useEffect(() => {
+    if (window.location.hash !== activeComponent) {
+      // hash determines active component
+
+      // get hash coming in
+      const hash = String(window.location.hash);
+      for (const navItem of navItems) {
+        if (navItem === hash.slice(1)) {
+          setActiveComponent(navItem);
+        }
       }
     }
-
-  }, []);
+  });
 
   const handleNavItem = (item: string) => {
     setActiveComponent(item);
@@ -56,7 +63,7 @@ const App: React.FC = () => {
     <div id="app" className="app-root">
       {isMobile ? ( 
         <div className="mobile">
-          <NavBarMobile handleNavItem={handleNavItem} activeComponent={activeComponent}/>
+          <NavBarMobile />
           <div className="card mobile-card" id="home">
             <HomeMobile />
           </div>
