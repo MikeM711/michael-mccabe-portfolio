@@ -32,3 +32,9 @@
 .mobile .project-title {
     padding-top: 10px;
 }
+
+@media only screen and (max-width: 375px) {
+    .mobile .links-card a {
+        font-size: 15px;
+    }
+}
