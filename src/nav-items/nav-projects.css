@@ -117,6 +117,12 @@
     padding-left: 0px;
 }
 
+@media only screen and (max-width: 400px) {
+    .links-card p{
+      font-size: 15px;
+    }
+  }
+
 .project-listing {
     padding-bottom: 50px;
 }

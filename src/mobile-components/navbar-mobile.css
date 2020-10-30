@@ -10,3 +10,7 @@
     background-color: white;
     height: 3px !important;
 }
+
+.mobile-site-navbar .row {
+    margin-bottom: 10px
+}

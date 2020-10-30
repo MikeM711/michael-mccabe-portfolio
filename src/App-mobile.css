@@ -6,7 +6,6 @@
 
 .mobile-card {
   max-width: 800px;
-  min-width: 340px;
   width: calc(100% - 20px);
   margin-left: auto;
   margin-right: auto;

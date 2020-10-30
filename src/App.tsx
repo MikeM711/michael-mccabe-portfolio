@@ -23,6 +23,7 @@ const App: React.FC = () => {
   const [repositories, setRepositories] = useState<any[]>([]);
 
   const isMobile: boolean = windowSize < 1042;
+  const isNarrow: boolean = windowSize < 450;
   const navItems = ["home", "experience", "open-source", "projects", "presentations", "current"];
 
   useEffect(() => {
@@ -64,7 +65,7 @@ const App: React.FC = () => {
     <div id="app" className="app-root">
       {isMobile ? ( 
         <div className="mobile">
-          <NavBarMobile />
+          <NavBarMobile isNarrow={isNarrow} />
           <div className="card mobile-card" id="home">
             <HomeMobile />
           </div>
