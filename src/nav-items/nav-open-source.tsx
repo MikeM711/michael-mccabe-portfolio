@@ -13,15 +13,15 @@ const NavOpenSource: React.FC = () => {
           <hr />
           <div className="links-container pull-request-title">
             <div className="row sub-title-links">
-              <p className="col l12 m12 s12">
+              <div className="col l12 m12 s12">
                 <a
                   href="https://mozillians.org/en-US/u/MikeM711/"
                   target="_blank"
                 >
                   Mozillian Account
                 </a>
-              </p>
-              <p className="col l12 m12 s12">
+              </div>
+              <div className="col l12 m12 s12">
                 <a
                   href="https://wiki.mozilla.org/Add-ons/Contribute/Recognition"
                   target="_blank"
@@ -29,7 +29,7 @@ const NavOpenSource: React.FC = () => {
                   Contributor Recognition
                 </a>{" "}
                 &nbsp;(MikeM711)
-              </p>
+              </div>
             </div>
           </div>
 

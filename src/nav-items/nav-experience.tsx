@@ -10,7 +10,7 @@ const NavExperience: React.FC = () => {
           <h3 className="card-title">Experience</h3>
           <hr />
           <p>
-            Hi, my name is Michael McCabe. I am a Software Developer Master's
+            Hi, my name is Michael McCabe, and I am a Software Developer Master's
             Student, Engineer and Open Source contributor.
           </p>
           <p>

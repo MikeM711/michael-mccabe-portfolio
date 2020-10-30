@@ -3,12 +3,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 .project-listing-mobile .project-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.project-listing-mobile .github-stats-card {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .project-listing-mobile .project-content p{

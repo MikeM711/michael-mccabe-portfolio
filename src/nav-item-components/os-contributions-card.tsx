@@ -42,24 +42,24 @@ const OSContributionsCard: React.FC<Props> = ({
             <p>{solution}</p>
           </span>
         </div>
-        <p className="col l4 m12 s12 links">
+        <div className="col l4 m12 s12 links">
           <span>
             <p className="description-sub-title">Links</p>
           </span>
           <div className="row">
-            <p className="col l12 m6 s12">
+            <div className="col l12 m6 s12">
               <a href={prUrl} target="_blank">
                 Pull Request
               </a>
-            </p>
+            </div>
 
-            <p className="col l12 m6 s12">
+            <div className="col l12 m6 s12">
               <a href={submittedCodeUrl} target="_blank">
                 Submitted Code
               </a>
-            </p>
+            </div>
           </div>
-        </p>
+        </div>
       </div>
     </div>
   );

@@ -13,6 +13,16 @@ body {
    overflow-y: scroll;
 }
 
+.card a {
+  font-weight: 500;
+  transition: .2s;
+}
+
+.card a:hover {
+  opacity: 0.25;
+  transition: .2s;
+}
+
 /* Mobile background */
 @media only screen and (max-width: 1000px) {
   body{
@@ -94,6 +104,12 @@ hr {
   color: #aaa;
   font-size: 25px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 500px) {
+  .my-status {
+    font-size: 20px;
+  }
 }
 
 .nav-main .row{

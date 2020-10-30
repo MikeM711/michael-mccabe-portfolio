@@ -33,6 +33,8 @@ const MobileProjects: React.FC<Props> = ({ repositories }) => {
               repo={projectRepo}
               title={project.title}
               description={project.description}
+              code={project.code}
+              demo={project.demo}
               tools={project.tools}
             />
             <div className="project-thumb project-thumb-mobile">

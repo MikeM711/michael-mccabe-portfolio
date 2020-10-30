@@ -12,6 +12,8 @@ const projectData = [
         ],
         "projectImage": parseit,
         "alt": "parseIt",
+        "code": "https://github.com/MikeM711/ParseIt",
+        "demo": "https://parse-it-app.herokuapp.com/",
         "tools": ["JavaScript", "Node.js", "Express", "React/Redux"]
     },
     {
@@ -22,6 +24,8 @@ const projectData = [
         ],
         "projectImage": youtubeScraper,
         "alt": "youtube-scraper",
+        "code": "https://github.com/MikeM711/React-YouTube-Comment-Section-Scraper",
+        "demo": "https://youtube-comment-scraper.herokuapp.com/",
         "tools": ["JavaScript", "Node.js", "Express", "React/Redux"]
     },
     {
@@ -33,6 +37,8 @@ const projectData = [
         ],
         "projectImage": handwritingRecognition,
         "alt": "handwriting-recognition",
+        "code": "https://github.com/MikeM711/Deep-Learning-Handwriting-Recognition",
+        "demo": "https://handwriting-recognition-py-js.herokuapp.com/",
         "tools": ["JavaScript", "Python", "Django", "React/Redux"]
     }
 ]

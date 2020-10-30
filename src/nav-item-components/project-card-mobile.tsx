@@ -7,10 +7,12 @@ interface Props {
   repo: any | undefined;
   title: string;
   description: string[];
+  code: string;
+  demo: string;
   tools: string[];
 }
 
-const ProjectCardMobile: React.FC<Props> = ({ repo, title, description, tools }) => {
+const ProjectCardMobile: React.FC<Props> = ({ repo, title, description, tools, code, demo }) => {
   return (
     <div className="col l12 project-description row">
       <p className="project-title">{title}</p>
@@ -39,11 +41,15 @@ const ProjectCardMobile: React.FC<Props> = ({ repo, title, description, tools })
         })}
       </div>
       <div className="links-card">
-        <p className="col l6 m6 s6">&lt;/&gt; Code</p>
-        <p className="col l6 m6 s6">
-          <FontAwesomeIcon className="code-fork fa-1x" icon={faLaptopCode} />{" "}
-          Demo
-        </p>
+        <div className="col l6 m6 s6">
+          <a href={code} target="_blank">&lt;/&gt; Code</a>
+        </div>
+        <div className="col l6 m6 s6">
+          <a href={demo} target="_blank">
+            <FontAwesomeIcon className="code-fork fa-1x" icon={faLaptopCode} />{" "}
+            Demo
+          </a>
+        </div>
       </div>
     </div>
   );

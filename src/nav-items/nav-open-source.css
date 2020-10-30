@@ -78,6 +78,8 @@
 /* Pull Request description card (Problem, solution, links) */
 .pull-request .open-source-description {
   margin-bottom: 0px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 /* all rows */
@@ -140,6 +142,10 @@
 /* All pull request links */
 .pull-request .links .row {
   margin-bottom: 0px;
+}
+
+.pull-request .links a {
+  font-size: 17px;
 }
 
 .pull-request .problem,  .pull-request .solution, .pull-request .links{

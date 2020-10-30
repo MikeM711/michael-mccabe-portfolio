@@ -49,10 +49,10 @@
 .monitor-circle { 
     position:absolute;
     bottom: 0px;
-    margin-bottom:39px;
+    margin-bottom:41px;
     margin-left:-50%;
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     background-color: rgb(145, 144, 144);
     border-radius: 50%;
 }
@@ -116,7 +116,7 @@
     margin-bottom: 0px;
 }
 
-.links-card p{
+.links-card a{
     font-size: 20px;
     margin-bottom: 0px;
     padding-left: 0px;

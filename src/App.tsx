@@ -67,7 +67,7 @@ const App: React.FC = () => {
         <div className="mobile">
           <NavBarMobile isNarrow={isNarrow} />
           <div className="card mobile-card" id="home">
-            <HomeMobile />
+            <HomeMobile isNarrow={isNarrow} />
           </div>
           <div className="card mobile-card" id="experience">
             <NavExperience />
