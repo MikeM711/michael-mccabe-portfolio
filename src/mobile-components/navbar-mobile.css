@@ -14,3 +14,8 @@
 .mobile-site-navbar .row {
     margin-bottom: 10px
 }
+
+/* Desktop opacity may be too hard to see on mobile */
+.mobile-site-navbar .tab a {
+    opacity: .75;
+}

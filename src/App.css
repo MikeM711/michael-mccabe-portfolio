@@ -13,19 +13,44 @@ body {
    overflow-y: scroll;
 }
 
+/* Mobile background */
+@media only screen and (max-width: 1000px) {
+  body{
+  background-image: linear-gradient(180deg, rgb(145, 227, 255),
+   rgb(64, 204, 255));
+  }
+}
+
+/* Padding of nav items on desktop*/
+.nav-current, .nav-experience, .nav-open-source, .nav-projects, .nav-presentations {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-home-mobile, .nav-experience, .nav-open-source, .nav-projects, .nav-presentations, .nav-current {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
 .card-stacked {
   padding-bottom: 30px;
 }
 
 .nav-experience p, .nav-open-source p, .nav-presentations p, .nav-current p{
-  padding-left: 23px;
-  padding-right: 23px;
   font-size: 16px;
   text-align: left;
   line-height: 2.25em;
   color: #777;
   font-family: source sans pro, sans-serif;
   padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-experience p, .nav-open-source p, .nav-presentations p, .nav-current p{
+    line-height: 2em;
+  }
 }
 
 .card-content .card-title {
@@ -47,13 +72,17 @@ body {
 .card-content .card-sub-title {
   font-size: 30px;
   font-weight: 400;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  line-height: 2em;
 }
 
 hr {
-  margin-left:25px;
-  margin-right:25px;
   opacity: .5;
+}
+
+/* Nav home has its own hr*/
+.nav-home hr{
+  margin-left: 18px;
 }
 
 #app {

@@ -12,7 +12,7 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ repo, title, description, tools }) => {
   return (
-    <div className="col l5 project-description">
+    <div className="col l6 project-description">
       <p className="project-title">{title}</p>
 
       {repo !== undefined ? (

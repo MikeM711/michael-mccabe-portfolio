@@ -41,6 +41,11 @@
     transform: rotateX(0deg) rotateY(50deg) rotateZ(10deg);
 }
 
+.project-listing {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
 .monitor-circle { 
     position:absolute;
     bottom: 0px;
