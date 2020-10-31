@@ -46,7 +46,7 @@ const NavExperience: React.FC = () => {
             data warehouses, distributed databases and cloud services.
           </p>
           <p>
-            <b>Information Structures with Python:</b> A focus on a strong
+            <b>Information Structures with Python:</b> A course for a strong
             foundation in Python programming.
           </p>
           <hr />
