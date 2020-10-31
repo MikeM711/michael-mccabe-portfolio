@@ -90,17 +90,12 @@ hr {
   opacity: .5;
 }
 
-/* Nav home has its own hr*/
-.nav-home hr{
-  margin-left: 18px;
-}
-
 #app {
   text-align: center;
 }
 
 .my-status {
-  font-family: "source sans pro" sans-serif;
+  font-family: "source sans pro", sans-serif;
   color: #aaa;
   font-size: 25px;
   font-weight: 300;

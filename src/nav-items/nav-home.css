@@ -27,3 +27,9 @@
 .card-image:hover {
     cursor: pointer;
 }
+
+/* Card content of this particular card-image needs to be adjusted */
+.nav-home .card-content {
+    padding-left: 30px;
+    padding-right: 10px;
+}
