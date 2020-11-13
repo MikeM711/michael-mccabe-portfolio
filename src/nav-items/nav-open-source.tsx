@@ -15,7 +15,7 @@ const NavOpenSource: React.FC = () => {
             <div className="row sub-title-links">
               <div className="col l12 m12 s12">
                 <a
-                  href="https://mozillians.org/en-US/u/MikeM711/"
+                  href="https://vouches.mozillians.org/en-US/u/MikeM711/"
                   target="_blank"
                 >
                   Mozillian Account

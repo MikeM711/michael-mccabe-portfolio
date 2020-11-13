@@ -57,7 +57,7 @@ const NavCurrent: React.FC = () => {
             A Few Future Plans:
             <ul>
               <li>
-                Develop more questions for significant Python topics (ie:
+                Develop more questions for significant Python topics (i.e.:
                 collection methods, beginner for/while loops, etc.)
               </li>
               <li>Move from Heroku to AWS</li>

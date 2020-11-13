@@ -22,8 +22,8 @@ const NavPresentations: React.FC = () => {
           </p>
           <p>
             Using this tool, users could run through thousands of
-            similarly-structured business forms or reciepts and extract text
-            from them, as opposted to manually typing out text found in the
+            similarly-structured business forms or receipts and extract text
+            from them, as opposed to manually typing out text found in the
             images.
           </p>
           <p>

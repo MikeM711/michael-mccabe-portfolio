@@ -10,8 +10,8 @@ const NavExperience: React.FC = () => {
           <h3 className="card-title">Experience</h3>
           <hr />
           <p>
-            Hi, my name is Michael McCabe, and I am a Software Developer Master's
-            Student, Engineer and Open Source contributor.
+            Hi, my name is Michael McCabe, and I am a Software Developer
+            Master's Student, Engineer and Open Source contributor.
           </p>
           <p>
             When I was a Mechanical Engineer, I have spent a considerable amount
@@ -46,8 +46,8 @@ const NavExperience: React.FC = () => {
             data warehouses, distributed databases and cloud services.
           </p>
           <p>
-            <b>Information Structures with Python:</b> A course for a strong
-            foundation in Python programming.
+            <b>Information Structures with Python:</b> A course for building a
+            strong foundation in Python programming.
           </p>
           <hr />
           <h4 className="card-sub-title skills-sub-title">Skills</h4>
