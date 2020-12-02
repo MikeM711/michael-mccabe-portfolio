@@ -59,6 +59,9 @@ const NavExperience: React.FC = () => {
               <p>Python</p>
             </div>
             <div className="col l3 m6 s12">
+              <p>Java</p>
+            </div>
+            <div className="col l3 m6 s12">
               <p>Node.js</p>
             </div>
             <div className="col l3 m6 s12">
@@ -68,10 +71,7 @@ const NavExperience: React.FC = () => {
               <p>React/Redux</p>
             </div>
             <div className="col l3 m6 s12">
-              <p>MongoDB</p>
-            </div>
-            <div className="col l3 m6 s12">
-              <p>PostgreSQL</p>
+              <p>SQL/NoSQL</p>
             </div>
             <div className="col l3 m6 s12">
               <p>HTML/CSS</p>
