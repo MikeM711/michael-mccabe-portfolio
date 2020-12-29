@@ -36,6 +36,9 @@ const NavExperience: React.FC = () => {
           <hr />
           <h4 className="card-sub-title">Courses Completed</h4>
           <p>
+            <b>Data Structures and Algorithms:</b> A rigorous (Java) class on how to handle data efficiently with the most optimal running time to create effective scalable software. Covered topics such as Recursion, Hash Tables, Trees, Graphs and Dynamic programming; along with various algorithms such as DFS and BFS. "Productivity experts say that breakthroughs come by thinking 'nonlinearly.'" (O'Reilly)
+          </p>
+          <p>
             <b>Server-Side Web Development:</b> Hands-on web application
             development using Node.js, MongoDB (NoSQL), JavaScript, Express
             along with PHP/MySQL.
